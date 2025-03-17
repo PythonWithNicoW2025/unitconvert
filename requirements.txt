@@ -1,0 +1,5 @@
+# Development dependencies
+setuptools
+wheel
+build
+pytest  # Only needed for testing

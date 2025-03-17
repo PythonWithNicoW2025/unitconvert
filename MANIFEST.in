@@ -1,0 +1,12 @@
+# Include README and LICENSE in the package
+include README.md
+include LICENSE
+
+# Include setup.cfg for package configuration
+include setup.cfg
+
+# Include any additional data files (if applicable)
+recursive-include src/unitconvert/data * 
+
+# Exclude unnecessary files
+global-exclude __pycache__ *.pyc *.pyo
