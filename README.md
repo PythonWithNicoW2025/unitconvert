@@ -2,7 +2,9 @@
 
 *A simple Python package for converting temperature, length, and weight units.*
 
-*This is a demonstration project for the "Python Package Development". Do not confuse this project with the unitconver package in Pypi.org*
+*This is a demonstration project for "Python Package Development". Check out the [Instruction.md](./Instruction.md) file for the step-by-step guide.*
+
+*Do not confuse this project with the unitconver package in Pypi.org*
 
 ## **🔹 Features**
 - Convert **Celsius to Fahrenheit** and vice versa.

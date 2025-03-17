@@ -316,19 +316,33 @@ Test it out:
 
 ------
 
-## Step 7: Publish to PyPI (Optional)
+## Step 7: Publishing and Sharing
 
-Publish using Twine (test on PyPI Test server first):
+After you build the package, you have several options for sharing it:
 
-```sh
-pip install twine
-twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-```
+- Upload the package to Python Package Index (PyPI). You need to have a PyPI account. 
+- Upload the package to TestPyPi(For Testing).
+
+    Publish using Twine (test on PyPI Test server first):
+
+    ```sh
+    pip install twine
+    twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+    ```
+
+- Share via GitHub Releases.
+    1. On GitHub, navigate to the main page of the repository.
+    2. To the right of the list of files, click on "Releases".
+    3. Choose or create a release tag.
+    4. Input the release title and description.
+    5. Choose Set as pre-release if it's a pre-release.
+    6. Upload the package file (`.tar.gz` or `.whl`) in the release.
+    7. Publish the release.
+    
+    Users can then download and install the package using `pip install https://link_to_the_release_file`.
 
 ------
 
 ## Conclusion
 
 Congratulations! You've learned to effectively create, structure, test, package, and optionally publish Python packages. Keep exploring and enhancing your projects!
-
-*Note:* You can optionally add a CLI for improved usability. Refer to additional resources or documentation for guidance.
