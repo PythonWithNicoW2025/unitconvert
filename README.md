@@ -1,37 +1,31 @@
-# **unitconvert** 📏🌡️  
+# UnitConvert - Python Package Demonstration
 
-*A simple Python package for converting temperature, length, and weight units.*
+*This is a demonstration project for "Python Package Development". Some parts of this project are intentionally unfinished. Check out the [Instruction.md](./Instruction.md) file for the step-by-step guide.*
 
-*This is a demonstration project for "Python Package Development". Check out the [Instruction.md](./Instruction.md) file for the step-by-step guide.*
+## Overview
+This project serves as a guide for setting up a Python package, structuring modules, and distributing it. The package, `unitconvert`, provides basic unit conversion functions for:
+- Temperature (Celsius ↔ Fahrenheit)
+- Length (Inches ↔ Centimeters)
+- Weight (Kilograms ↔ Pounds)
 
-*Do not confuse this project with the unitconver package in Pypi.org*
+## Installation
 
-## **🔹 Features**
-- Convert **Celsius to Fahrenheit** and vice versa.
-- Convert **inches to centimeters** and vice versa.
-- Convert **kilograms to pounds** and vice versa.
-- Easy-to-use functions with accurate conversions.
-
----
-
-## **📦 Installation**
-
-### **Using pip (from PyPI)**
-If published on PyPI, install it with:
-
-```sh
-pip install unitconvert
+### **1. Clone the Repository**
+```bash
+git clone <your-repo-url>
+cd unitconvert
 ```
 
-### **For Local Development**
+### **2. Create a Virtual Environment (Recommended)**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-If you're developing the package, install it in **editable mode**:
-
-```sh
+### **3. Install the Package in Editable Mode**
+```bash
 pip install -e .
 ```
-
----
 
 ## **🚀 Usage**
 
@@ -53,7 +47,28 @@ print(unitconvert.kg_to_pounds(5))  # Output: 11.0231
 print(unitconvert.pounds_to_kg(11.0231))  # Output: 5.0
 ```
 
----
+### **Using the CLI**
+```bash
+python cli.py
+```
+This will launch an interactive command-line interface for unit conversions.
+
+## Project Structure
+```
+unitconvert/
+│── src/
+│   ├── unitconvert/
+│   │   ├── __init__.py
+│   │   ├── temperature.py
+│   │   ├── length.py
+│   │   ├── weight.py
+│── cli.py
+│── setup.py
+│── pyproject.toml
+│── requirements.txt
+│── README.md
+│── Instruction.md  # Step-by-step guide
+```
 
 ## **🛠️ Running Tests**
 
@@ -63,8 +78,6 @@ Run all unit tests using `pytest`:
 pytest tests/
 ```
 
----
-
 ## **📤 Building**
 
 To build the package:
@@ -73,13 +86,6 @@ To build the package:
 python -m build
 ```
 
----
+## License
+This project is released under the MIT License.
 
-## **📄 License**
-This project is licensed under the MIT License.
-
----
-
-### **🌟 Contribute & Support**
-Feel free to submit issues or contribute by forking the repository!  
-For suggestions, reach out via **GitHub Issues**.

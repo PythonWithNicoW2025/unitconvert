@@ -182,7 +182,7 @@ from .weight import kg_to_pounds, pounds_to_kg
 ✔ Not as modular as newer approaches.
 Create a `setup.py` file:
 
-```
+```python
 from setuptools import setup, find_packages
 
 setup(
@@ -316,7 +316,59 @@ Test it out:
 
 ------
 
-## Step 7: Publishing and Sharing
+## Step 7: requirements.txt and .gitignore
+
+### requirements.txt
+
+The requirements.txt is a file that lists project dependencies. It's useful for sharing and reproducing the project environment.
+
+You can manually create a `requirements.txt` file to list project dependencies:
+
+```text
+setuptools
+wheel
+build
+pytest
+```
+
+You can also generate it automatically using:
+
+```sh
+pip freeze > requirements.txt
+```
+
+Users who has your project can install the dependencies using:
+
+```sh
+pip install -r requirements.txt
+```
+
+### .gitignore
+
+The .gitignore file specifies files and directories to ignore when pushing to a Git repository. It helps keep the repository clean and prevents unnecessary files from being committed.
+
+Example .gitignore file:
+
+```text
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+# Distribution / packaging
+/dist/
+/build/
+*.egg-info/
+# IDE-specific files
+.idea/
+.vscode/
+```
+
+You can find more examples at [GitHub's gitignore repository](https://github.com/github/gitignore).
+
+
+## Step 8: Publishing and Sharing
 
 After you build the package, you have several options for sharing it:
 
