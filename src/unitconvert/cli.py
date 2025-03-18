@@ -65,6 +65,7 @@ def convert_weight():
     else:
         print("Invalid choice.")
 
+
 def main():
     """
     Main function for the CLI

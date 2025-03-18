@@ -1,5 +1,6 @@
 """
 This module provides functions to convert temperature units.
+Demonstrates Google Python Style Guide section on functions.
 """
 
 
@@ -12,6 +13,9 @@ def celsius_to_fahrenheit(c):
 
     Returns:
         float: Temperature in Fahrenheit
+
+    Raises:
+        ValueError: If input is not numeric
     """
     if not isinstance(c, (int, float)):
         raise ValueError("Input must be numeric")
@@ -27,6 +31,9 @@ def fahrenheit_to_celsius(f):
 
     Returns:
         float: Temperature in Celsius
+
+    Raises:
+        ValueError: If input is not numeric
     """
     if not isinstance(f, (int, float)):
         raise ValueError("Input must be numeric")

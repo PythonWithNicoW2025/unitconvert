@@ -1,5 +1,6 @@
 """
 This module provides functions to convert weight units.
+Demonstrates Google Python Style Guide section on functions.
 """
 
 
@@ -12,6 +13,9 @@ def kg_to_pounds(kg):
 
     Returns:
         float: Weight in pounds
+
+    Raises:
+        ValueError: If input is not numeric
     """
     if not isinstance(kg, (int, float)):
         raise ValueError("Input must be numeric")
@@ -27,6 +31,9 @@ def pounds_to_kg(pounds):
 
     Returns:
         float: Weight in kilograms
+
+    Raises:
+        ValueError: If input is not numeric
     """
     if not isinstance(pounds, (int, float)):
         raise ValueError("Input must be numeric")
