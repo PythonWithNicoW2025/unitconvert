@@ -49,7 +49,7 @@ print(unitconvert.pounds_to_kg(11.0231))  # Output: 5.0
 
 ### **Using the CLI**
 ```bash
-python cli.py
+unitconvert
 ```
 This will launch an interactive command-line interface for unit conversions.
 
